@@ -242,7 +242,7 @@ func (c *Client) GetServerTime() (time.Time, error) {
 func (c Client) Ping() error {
 	request, err := c.prepareRequest(Request{
 		Method: http.MethodGet,
-		URL:    c.apiURL,
+		URL:    c.apiURL + "/",
 	})
 	if err != nil {
 		return errors.WithStack(err)
