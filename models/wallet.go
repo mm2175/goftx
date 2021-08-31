@@ -11,6 +11,7 @@ type CreateWithdrawPayload struct {
 	Address string  `json:"address"`
 	Tag     string  `json:"tag,omitempty"`
 	Method  string  `json:"method,omitempty"`
+	Code    string  `json:"code,omitempty"`
 }
 
 type Withdraw struct {

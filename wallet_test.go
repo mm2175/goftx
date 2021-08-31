@@ -40,6 +40,7 @@ func TestWallet_Withdraw(t *testing.T) {
 		Address: os.Getenv("WITHDRAW_ADDR"),
 		Tag:     os.Getenv("WITHDRAW_TAG"),
 		Method:  os.Getenv("WITHDRAW_NETWORK"),
+		Code:    os.Getenv("WITHDRAW_CODE"),
 	}
 	res, err := ftx.Withdraw(context.Background(), &payload)
 
